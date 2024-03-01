@@ -239,6 +239,10 @@ html,body{
     margin: 20px 25px 5px 25px;
     border-radius: 25px;
     opacity: 70%;
+    transition: 300ms;
+}
+#projects #mid1 .left img:hover,#projects #mid1 .mid1 img:hover,#projects #mid1 .mid2 img:hover,#projects #mid1 .right img:hover{
+    box-shadow: 0 2px 4px rgb(0, 157, 255);
 }
 #projects #lasthead{
     display: flex;
