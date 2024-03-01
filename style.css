@@ -301,7 +301,7 @@ html,body{
     letter-spacing: 15px;
 }
 #skill .skill1{
-    border-bottom: white solid;
+   border-bottom: rgba(255, 255, 255, 0.509) solid;
 }
 #skill .skill1 .main h1{
     font-family: Krona One;
