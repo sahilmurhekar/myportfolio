@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #121212; /* Track color */
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(0, 157, 255); /* Thumb color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 157, 255); /* Hover color */
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-image: url('port_assets/backg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+#left{
+    width: 5%;
+}
+.upperl, .lowerl{
+    height: 400px;
+    line-height: 2;
+    font-family: Krona One;
+    font-size: 14px;
+    color: white;
+    opacity: 60%;
+}
+.upperl{
+    padding: 40px;
+}
+.lowerl{
+    padding: 100px 40px 0px 40px ;
+}
+#right{
+    margin-top: 530px;
+    display: block;
+    width: 5%;
+    padding: 20px;
+}
+#right svg{
+    opacity: 60%;
+    margin: 10px;
+    height: 30px;
+    width: 30px;
+    transition: 300ms;
+    fill: white;
+}
+#right svg:hover{
+    fill: rgb(0, 157, 255);
+    opacity: 100%;
+    fill: rgb(0, 157, 255);
+    filter: drop-shadow(1px 1px 2px rgb(0, 157, 255));
+}
+#mid{
+    height: 100%;
+    width: 90%;
+}
+.nav{
+    margin-top: 100px;
+}
+.nav ul{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.nav ul li{
+    opacity: 60%;
+    margin: 25px;
+    list-style: none;
+    transition: 300ms;
+}
+.nav ul li:hover{
+    opacity: 100%;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Krona One;
+    font-size: 16px;
+    transition: 300ms;
+}
+.nav ul li a:hover{
+    color: rgb(0, 157, 255);
+    text-shadow: 0 2px 4px rgb(0, 157, 255);
+}
+#main1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#main1 marquee {
+    position: absolute;
+    padding-top: 200px;
+    top: 0;
+    left: 0;
+    font-family: Krona One;
+    font-size: 150px;
+    opacity: 20%;
+    color: white;
+    z-index: 1; /* Ensure the text stays behind the image */
+}
+
+#main1 img {
+    position: relative;
+    z-index: 2;
+    height: 700px;
+}
+#about {
+    padding: 5% 10%;
+}
+.aboutme {
+    height: 35px;
+    width: 100%;
+}
+.aboutme h1{
+    font-size: 24px;
+    font-weight: 100;
+    font-family: Krona One;
+    color: white;
+    opacity: 60%;
+    letter-spacing: 10px;
+}
+.matter{
+    margin-top: 50px;
+
+}
+.matter p{
+    font-family: Kumbh Sans;
+    font-size: 98px;
+    letter-spacing: 1px;
+    line-height: 100px;
+    color: white;
+    opacity: 50%;
+}
+.tech{
+    display: flex;
+    margin-top: 75px;
+    font-family: Krona One;
+    font-size: 18px;
+}
+#left1{
+    border-right: rgba(255, 255, 255, 0.504) solid;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+}
+.lleft1, .rleft1{
+    width: 50%;
+    line-height:25px;
+    padding: 10px;
+    opacity: 70%;
+    color: white;
+}
+#right1 .up,#right1 .down{
+    display: flex;
+    padding: 10%;
+}
+#right1 img{
+    opacity: 60%;
+    height: 60px;
+    width: 60px;
+    margin-right: 25%;
+    margin-left: 15%;
+    transition: 300ms;
+}
+#right1 img:hover{
+    opacity: 100%;
+}
+#projects{
+    margin-top: 100px;
+    width: 100%;
+}
+#projects #heading{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#projects #heading h1{
+    font-family: Krona One;
+    font-size: 3.5vw;
+    color: white;
+    opacity: 60%;
+    letter-spacing: 10px;
+}
+#projects #subheading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    letter-spacing: 30px;
+    margin-bottom: 5%;
+    margin-top: 3%;
+}
+#projects #subheading h2{
+    font-size: 16px;
+    color: white;
+    opacity: 60%;
+    font-family: KRONA ONE;
+}
+#projects #mid1{
+    display: flex;
+    justify-content: space-around;
+    margin: 0% 10%;
+}
+#projects #mid1 .left,#projects #mid1 .mid1,#projects #mid1 .mid2,#projects #mid1 .right{
+    background-color: #22222255;
+    height: 400px;
+    width: 300px;
+    border-radius: 25px;
+    transition: 300ms;
+}
+#projects #mid1 .left:hover,#projects #mid1 .mid1:hover,#projects #mid1 .mid2:hover,#projects #mid1 .right:hover{
+    background-color: #222222a8;
+    box-shadow: 0 4px 8px rgb(0, 157, 255);
+}
+#projects #mid1 .left img,#projects #mid1 .mid1 img,#projects #mid1 .mid2 img,#projects #mid1 .right img{
+    height: 150px;
+    width: 250px;
+    margin: 20px 25px 5px 25px;
+    border-radius: 25px;
+    opacity: 70%;
+}
+#projects #lasthead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%;
+    letter-spacing: 30px;
+}
+#projects #lasthead h2{
+    font-size: 16px;
+    color: white;
+    opacity: 60%;
+    font-family: KRONA ONE;
+}
+#projects #mid1 .left h1,#projects #mid1 .mid1 h1,#projects #mid1 .mid2 h1,#projects #mid1 .right h1{
+    font-family: Krona One;
+    font-size: 24px;
+    color: white;
+    margin-top: 10px;
+    opacity: 70%;
+}
+#projects #mid1 .left div,#projects #mid1 .mid1 div,#projects #mid1 .mid2 div,#projects #mid1 .right div{
+    padding: 10px 25px 10px 25px;
+    font-size: 14px;
+    font-family: "Montserrat";
+    font-weight: 200;
+    line-height: 15px;
+    color: white;
+    opacity: 70%;
+}
+#projects #mid1 .left a,#projects #mid1 .mid1 a,#projects #mid1 .mid2 a,#projects #mid1 .right a{
+    color: rgb(0, 157, 255);
+    text-decoration: none;
+    opacity: 60%;
+    transition: 300ms;
+    font-family: KRONA ONE;
+    font-size: 12px;
+}
+#projects #mid1 .left a:hover,#projects #mid1 .mid1 a:hover,#projects #mid1 .mid2 a:hover,#projects #mid1 .right a:hover{
+    opacity: 100%;
+}
+#skill{
+    margin: 10% 10%;
+}
+#skill #head {
+    height: 35px;
+}
+#skill #head h1{
+    font-size: 24px;
+    font-weight: 100;
+    font-family: Krona One;
+    color: white;
+    opacity: 60%;
+    letter-spacing: 15px;
+}
+#skill .skill1{
+    border-bottom: white solid;
+}
+#skill .skill1 .main h1{
+    font-family: Krona One;
+    font-size: 70px;
+    color: white;
+    opacity: 50%;
+    letter-spacing: -8px;
+    transition: 300ms;
+}
+#skill .skill1 .main h1:hover,#skill .skill0 .main h1:hover{
+    opacity: 100%;
+    color:rgb(0, 157, 255);
+    text-shadow: 0 2px 4px rgb(0, 157, 255);
+}
+#skill .skill0 .main{
+    padding-top: 15px;
+}
+#skill .skill1 .main{
+    padding-top: 15px;
+}
+#skill .skill0{
+    margin-top: 100px;
+    border-top: rgba(255, 255, 255, 0.516) solid;
+    border-bottom: rgba(255, 255, 255, 0.509) solid;
+}
+#skill .skill0 .main h1{
+    font-family: Krona One;
+    font-size: 70px;
+    color: white;
+    opacity: 50%;
+    letter-spacing: -8px;
+    transition: 300ms;
+}
+#skill .skill0 .main{
+    margin: 10px;
+}
+.skill1 .star img{
+    height: 12px;
+    width: 12px;
+    margin: 10px;
+}
+.skill0 .star img{
+    height: 12px;
+    width: 12px;
+    margin: 10px;
+}
+.skill1 .star{
+    display: flex;
+    justify-content: end;
+}
+.skill0 .star{
+    display: flex;
+    justify-content: end;
+}
+#contact #heading{
+    margin-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#contact #heading h1{
+    font-family: Krona One;
+    font-size: 3.5vw;
+    color: white;
+    opacity: 60%;
+    letter-spacing: 25px;
+}
+#contact #subhead{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+#contact #subhead h2{
+    font-family: Krona One;
+    font-size: 18px;
+    color: white;
+    opacity: 60%;
+    letter-spacing: 15px;
+}
+#contact #middle{
+    height: 500px;
+    margin: 0% 10%;
+    margin-top: 75px;
+}
+#contact .left span{
+    font-family: Krona One;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 8px;
+    opacity: 70%;
+}
+#contact #middle{
+    display: flex;
+}
+#contact #middle .left{
+    width: 40%;
+}
+#contact #middle .right{
+    width: 60%;
+}
+#contact #middle .left #A,#contact #middle .left #B,#contact #middle .left #C{
+    margin: 40px 0px;
+}
+#contact .left p{
+    font-family: Montserrat;
+    color: white;
+    font-size: 16px;
+    letter-spacing: 3px;
+}
+form #names{
+    display: flex;
+    justify-content: space-around;
+}
+form #names input{
+    width: 90%;
+}
+input{
+    height: 50px;
+    width: 95%;
+    background-color: #22222255;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    font-family: Krona One;
+    font-size: 14px;
+    padding-left: 25px;
+}
+input:hover{
+    background-color: #22222285;
+}
+form div{
+    margin-top: 20px;
+}
+form #msg input{
+    height: 175px;
+}
+.right #names .fname,.right #names .lname{
+    width: 100%;
+} 
+form::placeholder{
+    margin-left: 20px;
+    font-family: Krona One;
+
+}
+::placeholder{
+    color: rgba(255, 255, 255, 0.276);
+    font-family: Krona One;
+    font-size: 14px;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+button{
+    border: white solid;
+    border-radius: 25px;
+    background-color: #12121200;
+    color: white;
+    font-family: Krona One;
+    font-size: 14px;
+    opacity: 70%;
+    padding: 10px;
+    transition: 300ms;
+}
+button:hover{
+    border: rgb(0, 157, 255) solid;
+    background-color: rgb(0, 157, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: 0 2px 4px rgb(0, 157, 255);
+}
+#footer{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#footer .container{
+    width: 50%;
+    display: flex;
+    border-top: rgba(255, 255, 255, 0.576) solid;
+    justify-content: center;
+    align-items: center;
+}
+#footer .container svg{
+    opacity: 60%;
+    margin: 20px;
+    height: 30px;
+    width: 30px;
+    transition: 300ms;
+    fill: white;
+}
+#footer .container svg:hover{
+    fill: rgb(0, 157, 255);
+    opacity: 100%;
+    fill: rgb(0, 157, 255);
+    filter: drop-shadow(1px 1px 2px rgb(0, 157, 255));
+}
+
+
