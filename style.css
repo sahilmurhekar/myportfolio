@@ -187,13 +187,13 @@ html,body{
     opacity: 100%;
 }
 #projects{
-    margin-top: 100px;
     width: 100%;
 }
 #projects #heading{
     display: flex;
     justify-content: center;
     align-self: center;
+    margin: 250px 0px 100px 0px;
 }
 #projects #heading h1{
     font-family: Krona One;
@@ -208,7 +208,7 @@ html,body{
     align-items: center;
     width: 100%;
     letter-spacing: 30px;
-    margin-bottom: 5%;
+    margin-bottom: 7%;
     margin-top: 3%;
 }
 #projects #subheading h2{
@@ -224,14 +224,13 @@ html,body{
 }
 #projects #mid1 .left,#projects #mid1 .mid1,#projects #mid1 .mid2,#projects #mid1 .right{
     background-color: #22222255;
-    height: 400px;
-    width: 300px;
+    height: 350px;
+    width: 325px;
     border-radius: 25px;
     transition: 300ms;
 }
 #projects #mid1 .left:hover,#projects #mid1 .mid1:hover,#projects #mid1 .mid2:hover,#projects #mid1 .right:hover{
     background-color: #222222a8;
-    box-shadow: 0 4px 8px rgb(0, 157, 255);
 }
 #projects #mid1 .left img,#projects #mid1 .mid1 img,#projects #mid1 .mid2 img,#projects #mid1 .right img{
     height: 150px;
@@ -240,15 +239,17 @@ html,body{
     border-radius: 25px;
     opacity: 70%;
     transition: 300ms;
+    filter: grayscale(30%);
 }
-#projects #mid1 .left img:hover,#projects #mid1 .mid1 img:hover,#projects #mid1 .mid2 img:hover,#projects #mid1 .right img:hover{
-    box-shadow: 0 2px 4px rgb(0, 157, 255);
+#projects #mid1 .left:hover img,#projects #mid1 .mid1:hover img,#projects #mid1 .mid2:hover img,#projects #mid1 .right:hover img{
+    opacity: 1;
+    filter: grayscale(0%);
 }
 #projects #lasthead{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 7%;
     margin-bottom: 5%;
     width: 100%;
     letter-spacing: 30px;
@@ -259,21 +260,18 @@ html,body{
     opacity: 60%;
     font-family: KRONA ONE;
 }
-#projects #mid1 .left h1,#projects #mid1 .mid1 h1,#projects #mid1 .mid2 h1,#projects #mid1 .right h1{
-    font-family: Krona One;
-    font-size: 24px;
-    color: white;
-    margin-top: 10px;
-    opacity: 70%;
-}
 #projects #mid1 .left div,#projects #mid1 .mid1 div,#projects #mid1 .mid2 div,#projects #mid1 .right div{
     padding: 10px 25px 10px 25px;
     font-size: 14px;
     font-family: "Montserrat";
-    font-weight: 200;
+    font-weight: 300;
+    letter-spacing: 1.5px;
     line-height: 15px;
     color: white;
-    opacity: 70%;
+    opacity: 0.75;
+}
+#projects #mid1 .left div:hover,#projects #mid1 .mid1 div:hover,#projects #mid1 .mid2 div:hover,#projects #mid1 .right div:hover{
+    opacity: 1;
 }
 #projects #mid1 .left a,#projects #mid1 .mid1 a,#projects #mid1 .mid2 a,#projects #mid1 .right a{
     color: rgb(0, 157, 255);
@@ -287,7 +285,7 @@ html,body{
     opacity: 100%;
 }
 #skill{
-    margin: 10% 10%;
+    margin: 5% 10%;
 }
 #skill #head {
     height: 35px;
@@ -314,7 +312,6 @@ html,body{
 #skill .skill1 .main h1:hover,#skill .skill0 .main h1:hover{
     opacity: 100%;
     color:rgb(0, 157, 255);
-    text-shadow: 0 2px 4px rgb(0, 157, 255);
 }
 #skill .skill0 .main{
     padding-top: 15px;
@@ -357,7 +354,7 @@ html,body{
     justify-content: end;
 }
 #contact #heading{
-    margin-top: 250px;
+    margin: 200px 0px 50px 0px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -370,7 +367,7 @@ html,body{
     letter-spacing: 25px;
 }
 #contact #subhead{
-    margin-top: 30px;
+    margin: 30px 0px 50px 0px;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -422,16 +419,17 @@ form #names input{
 input{
     height: 50px;
     width: 95%;
-    background-color: #22222255;
+    background-color: #1717177c;
     border: none;
     border-radius: 25px;
     color: white;
     font-family: Krona One;
     font-size: 14px;
     padding-left: 25px;
+    transition: 300ms;
 }
 input:hover{
-    background-color: #22222285;
+    background-color: #2b2b2b95;
 }
 form div{
     margin-top: 20px;
@@ -477,22 +475,22 @@ button:hover{
     box-shadow: 0 2px 4px rgb(0, 157, 255);
 }
 #footer{
-    margin-top: 100px;
+    margin-top: 80px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 #footer .container{
-    width: 50%;
+    width: 30%;
     display: flex;
-    border-top: rgba(255, 255, 255, 0.576) solid;
+    border-top:2px rgba(255, 255, 255, 0.576) solid;
     justify-content: center;
     align-items: center;
 }
 #footer .container svg{
     opacity: 60%;
-    margin: 20px;
+    margin: 10px 20px 20px 20px;
     height: 30px;
     width: 30px;
     transition: 300ms;
@@ -518,6 +516,9 @@ button:hover{
 }
 .textbox:hover{
     background-color: #2b2b2bb7;
+}
+.textbox:hover h2{
+    opacity: 1;
 }
 @keyframes movedown {
     0%{
@@ -549,8 +550,8 @@ button:hover{
 }
 
 .textbox{
-    padding: 20px 50px;
-    background: #171717b7;
+    padding: 10px 30px;
+    background: #1717177c;
     position: relative;
     border-radius: 25px;
     color: white;
@@ -565,7 +566,7 @@ button:hover{
 .timeline::after{
     content: '';
     position: absolute;
-    width: 6px;
+    width: 4px;
     height: 100%;
     background: #ffffffbc;
     top: 0;
@@ -578,6 +579,7 @@ button:hover{
     font-family: Kumbh Sans;
     margin: 30px;
     font-size: 30px;
+    opacity: 0.75;
 }
 .timeline p{
     font-family: Montserrat;
@@ -630,4 +632,97 @@ button:hover{
     color: white;
     opacity: 60%;
     letter-spacing: 10px;
+    margin: 75px 0px 75px 0px;
+}
+#resume .container{
+    width: auto;
+	padding: 35px 10%;
+}
+#resume .container{
+	padding-right: calc(10% - 30px);
+}
+#resume main.row{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 20px;
+}
+#resume .col header.title{
+	font-size: 14px;
+    font-weight: 100;
+    font-family: Krona One;
+    color: white;
+    opacity: 80%;
+    letter-spacing: 2px;
+	padding: 0px 0px 20px 30px;
+}
+#resume .col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+}
+#resume .col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #1717177c;
+	background-color: #1717177c;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+    border-radius: 25px;
+    font-family: Kumbh Sans;
+    opacity: 0.75;
+}
+#resume .col .contents .box:hover{
+	background-color: #2b2b2bb7;
+	border: 1px solid transparent;
+    opacity: 1;
+}
+#resume .col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: #ffffff;
+    filter: brightness(0.7);
+	border: 2px solid rgba(255, 255, 255, 0.714);
+}
+#resume .box h4{
+	position: relative;
+	color: rgba(0, 157, 255);
+}
+#resume .box h3{
+	font-size: 32px;
+	padding: 20px 0px 20px;
+	color: #ffffff;
+}
+#resume .box p{
+	line-height: 1.5;
+	color: #fff;
+	font-size: 15px;
+    font-family: Montserrat;
+    font-weight: 300;
+}
+@media(max-width: 768px){
+	#resume main.row{
+		grid-template-columns: 1fr;
+	}
+	#resume .row .col:nth-child(2){
+		margin-top: 30px;
+	}
+}
+#resume #head{
+    font-family: Krona One;
+    font-size: 3.5vw;
+    color: white;
+    opacity: 60%;
+    letter-spacing: 5px;
+    margin: 200px 0px 75px 0px;
+}
+#resume h5{
+    font-family: Kumbh Sans;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
